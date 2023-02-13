@@ -25,6 +25,9 @@ public class ArraySearch {
 		}//end if
 	    }//end inner for
 	}//end outer for
+        for(int d : a){
+            System.out.println("Sorted Items: "+d);
+        }
 	return a;
     }
     static void search(int a[], int x){
@@ -39,8 +42,10 @@ public class ArraySearch {
 	    }
 	    if(sortArry[lo] == x){
 		System.out.println("Found At Index: "+lo);
+                break;
 	    }else if(sortArry[hi] == x){
 		System.out.println("Found At Index: "+hi);
+                break;
 	    }else{
 		System.out.println("Not Found");
 	    }
