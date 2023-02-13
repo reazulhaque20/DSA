@@ -30,7 +30,7 @@ public class ArraySearch {
         }
 	return a;
     }
-    static void search(int a[], int x){
+    static void search(int a[], int x){        
 	int sortArry[] = sort(a);
 	int len = sortArry.length, lo=0, hi=sortArry.length-1;
 	while(hi-lo>1){
@@ -53,8 +53,8 @@ public class ArraySearch {
     }
     public static void main(String[] args) {
 	// TODO code application logic here
-	int a[] = {2,5,3,6,7,1,9,4,8};
-	int x = 9;
+	int a[] = {7,8,1,2,3,4,5,6};
+	int x = 4;
 	search(a, x);
     }
     
